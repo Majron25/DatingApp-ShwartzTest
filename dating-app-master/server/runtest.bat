@@ -1,0 +1,1 @@
+node node_modules\ava\entrypoints\cli.mjs  %1  %2  %3 %4

@@ -1,0 +1,40 @@
+This document contains information on how to perform fundamental tasks needed to contribute to the frontend development.
+
+
+How-to: Get Started ====================================================================================================
+========================================================================================================================
+
+1. Install node.js and Git on your computer.
+
+2. Clone the app's Git respository to your computer.
+
+3. Open the './project/' folder in VS Code (can use any text editor, but VS Code is preferred by most nowadays).
+
+4. Run the command 'npm install' in a terminal window opened to the frontend's directory (i.e. the './project/' 
+   directory). This will install all of the app's dependencies, as listed in 'package.json'.
+
+5. Run 'npx expo start --tunnel' to start the local development server. Note: the 'tunnel' argument is not necessary, 
+   but it does allow you and others to access the app from networks other than the one your computer is on, which can be
+   useful for collaboration.
+
+6. With your phone, scan the QR code in your terminal window with the Expo Go app. This should open the app on your 
+   phone.
+
+
+How-to: Create a Page ==================================================================================================
+========================================================================================================================
+
+1. Create a new page component in the './pages/' folder. Copy another pre-existing page component as a template if 
+   that's easier. One requirement for a page is that PageContainer must be the page's top-level component. The name
+   of the component and its file should be the same; moreover, the name must begin with an uppercase letter.
+
+2. Import your new component into './pages/pages.js'. You must also add a property to the 'pages' object within 
+   './pages/pages.js' whose value is your component. The property name should be the same as the component's name, 
+   except camelcase should be used (i.e. lowercase first letter). The 'pages' object in './pages/pages.js' is imported 
+   by App.js, which handles page rendering/navigation.
+
+3. Add contents to your page, making sure to use the components from the './components/' folder:
+    * If you want ...
+        - ... a button, use the ButtonStandard component.
+        - ... text, use the TextStandard component.
+        - ... a textbox, use the TextStandard component.

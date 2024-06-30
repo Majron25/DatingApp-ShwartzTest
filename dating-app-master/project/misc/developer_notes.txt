@@ -1,0 +1,48 @@
+This document contains online resources used throughout the frontend's development, as well as a list of key issues to 
+be addressed and a general overview of how the system works.
+
+
+Resources ==============================================================================================================
+========================================================================================================================
+
+Tutorial on light/dark mode implementation:
+- https://www.youtube.com/watch?v=KZyUlaz7gCk
+
+List of all the icons available through the library 'react-native-vector-icons':
+- https://oblador.github.io/react-native-vector-icons/
+
+Article explaining how to use the 'react-navigation' library:
+- https://articles.wesionary.team/combining-stack-navigator-with-tab-navigator-in-react-native-react-navigation-253656f45181
+
+Forum on how nested navigation works:
+- https://stackoverflow.com/questions/71291035/react-navigation-navigate-out-of-nested-navigator 
+
+
+Frontend Info ==========================================================================================================
+========================================================================================================================
+
+* ./assets/: this folder contains static resources such as images (e.g. splash-screen, logo, app icon, etc).
+
+* ./components/: this folder contains various components that are designed to be used by the page components. These 
+  elements automatically apply the app's theme, which makes it much easier to create consistent, theme-compliant pages.
+  For instance, the PageContainer component is designed to be the top-level component of each page component, which 
+  handles displaying the header and navbar.
+
+* ./contexts/: this folder contains the contexts used throughout the application. Contexts are used to share global 
+  data amongst an application's components, such as the current theme.
+
+* ./pages/: this folder contains the page components.
+
+* ./utils/: this folder contains any utility elements such as utility functions, global constants, etc.
+
+* ./App.js: the app's entry-point component.
+
+* ./ApiRequestor.js: this file exports an object that supplies functions that map to each of the backend's API 
+  endpoints. Whenever you're working on a page that needs to communicate with the backend, import this file and use one
+  of the provided methods.
+
+
+Problems ===============================================================================================================
+========================================================================================================================
+
+...
